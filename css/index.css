@@ -48,14 +48,17 @@ html{
 }
 #about{
 	background: url(../img/szwan.jpg) no-repeat;
+	background-size: cover;
 	background-position: center;
 }
 #products{
 	background: url(../img/light.jpg) no-repeat;
+	background-size: cover;
 	background-position: center;
 }
 #contactMe{
 	background:url(../img/could.jpg) no-repeat;
+	background-size: cover;
 	background-position: center;
 }
 /*以下是about样式*/
