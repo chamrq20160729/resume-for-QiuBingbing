@@ -1,238 +1,132 @@
-*{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	color: #fff;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
+/*.logo{
+	padding: 10px 0 10px 2em;
 }
+#hNav a{
+	display: block;
+	width: 100%;
+	text-align: center;
+}*/
 html{
 	font-size: 100%;
-	background: black;
 }
-a{
-	display: block;
-	text-decoration: none;
+.navbar{
+	margin-bottom: 0;
 }
-.clearfix::after{
-	content: "";
-	display: block;
-	height: 0;
-	overflow: hidden;
-	clear: both;	
-}
-.header{
-	position: fixed;
-	width: 100%;
-	height: 50px;
-	margin-top: 1em;
-	z-index: 2;
-}
-.header a{
-	color: white;
-	font-size: 1.3em;
-}
-
-.logo{
-	float: left;
-	margin-left: 4em;
-}
-#hNav{
-	position: absolute;
-	overflow: ;
-	right: 0;
-	width: 30%;
-}
-#hNav ul{
-	position: absolute;
-	right: 20%;
-	width: 100%;
-}
-#hNav ul li{
-	float: left;
-	width: 25%;
-}
-
-#hNav ul li a{
-	text-align: center;
-	box-sizing: border-box;
-}
-#hNav ul li a:hover{
-	border-bottom: 2px #fff solid;
-	border-top: 2px #fff solid;
-}
-/*以下是分页面通用样式*/
 .section{
-	padding: 5% 10% 0;
+	position: relative;
+	min-height: 60em;
+	padding-top: 7em;
+	color: white;
 }
-#homePage{
-	background: url(../img/IMGP7003.JPG) no-repeat;
-	background-size: 100%;
-}
-#about{
-	background: url(../img/IMGP3507.JPG) no-repeat;
-	background-size: 100%;
-}
-#products{
-	background: url(../img/IMGP1675.JPG) no-repeat;
-	background-size: 100%;
-}
-#contactMe{
-	background:url(../img/IMGP7726.JPG) no-repeat;
-	background-size: 100%;
-}
-.tit{/*此处样式可以酌情删除*/
-	position: absolute;
-	right: 5%;
-	top: 10%;
-	width: 15%;
-	font-size: 0.7em;
-}
-#fp-nav span{
-	background: #fff;
-	opacity: 0.3;
-}
-#fp-nav ul li .active span{
-	background: #fff;
-	opacity: 1;
-}
-/*以下是homePage页面样式*/
+
 .hList{
+	width: 25%;
 	position: absolute;
-	left: 20%;
-	top: 30%;
+	left: 50%;
+	top: 25%;
 }
-.hList .top{
-	font-size: 2em;
+.top{
+	font-size: 3em;
+	border-bottom: solid #fff 2px;
 }
-.hList .bot{
+.bot{
 	font-size: 1.5em;
 }
+@media only screen and (max-width:480px ) {
+	.top{
+	font-size: 2em;
+	border-bottom: solid #fff 2px;
+	}
+	.bot{
+		font-size: 1em;
+	}
+}
+#homePage{
+	background: url(../img/sea.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#about{
+	background: url(../img/szwan.jpg) no-repeat;
+	background-position: center;
+}
+#products{
+	background: url(../img/light.jpg) no-repeat;
+	background-position: center;
+}
+#contactMe{
+	background:url(../img/could.jpg) no-repeat;
+	background-position: center;
+}
 /*以下是about样式*/
+#about .col-md-6:first-child{
+	position: relative;	
+}
 .aboutMe{
-	float: left;
-	width: 30%;
+	width: 80%;
+	margin: auto;
 	padding: 1em;
-	background: rgba(40,120,140,0.9);
+	background: rgba(40,120,140,0.8);
 	border-radius: 0.5em;
 }
-.aboutMe img{
+.aboutMe ul,.aboutMe img{
+	width: 75%;
 	display: block;
 	margin: 0 auto;
-	border-radius: 50%;
 }
-.aboutMe h2{
-	text-align: center;
-}
-.aboutMe h3{
-	width: 70%;
-	margin: 0 auto;
+table{
+	width: 100%;
 }
 .skills{
-	float: right;
-	width: 50%;
-	padding: 3%;
-	background: rgba(40,120,140,0.9);
-	border-radius: 0.5em;
-}
-.skills table{
-	width: 100%;
+	margin: 1em;
 	padding: 1em;
-	background: rgba(200,200,200,0.2);
+	background: rgba(40,120,140,0.8);
 	border-radius: 0.5em;
 }
-.skills table tr{
-	line-height: 4em;
-}
-.skills table tr td h4{
-	width: 6em;
-}
-.line{
-	width: 80%;
-}
-.skills table tr td span{
-	display: inline-block;
-}
-.line span{
-	height:1em;
-	float: left;
-}
-.loneLine1{
-	background: #255625;
-	width: 90%;
-}
-.shortLine1{
-	background: #fff;
-	width: 10%;
-}
-.loneLine2{
-	background: #255625;
-	width: 90%;
-}
-.shortLine2{
-	background: #fff;
-	width: 10%;
-}
-.loneLine3{
-	background: #255625;
-	width: 70%;
-}
-.shortLine3{
-	background: #fff;
-	width: 30%;
-}
-.loneLine4{
-	background: #255625;
-	width: 70%;
-}
-.shortLine4{
-	background: #fff;
-	width: 30%;
-}
-.loneLine5{
-	background: #255625;
-	width: 60%;
-}
-.shortLine5{
-	background: #fff;
-	width: 40%;
-}
-.loneLine1,.loneLine2,.loneLine3,.loneLine4,.loneLine5{
-	border-radius: 0.5em 0 0 0.5em;
-}
-.shortLine1,.shortLine2,.shortLine3,.shortLine4,.shortLine5{
-	border-radius: 0 0.5em 0.5em 0;
-}
-.sc{
-	width: 10%;
-	text-align: center;
-}
-/*以下是第三页*/
-.pImg{
-	overflow: hidden;
-	width: 100%;
-	height: 36.67em;
-}
-.pImg figure{
-	position: relative;
-	float: left;
-	width: 23em;
-	height: 16.33em;
-	margin: 0.5em;
-	padding: 0.5em;
-	background: rgba(255,255,255,0.3);
-	border-radius: 0.2em;
-}
-.pImg figure:hover{
-	background: rgba(255,255,255,0.6)
-}
-.pImg figure img{
-	width: 22em
-	height: 13.72em;
-}
-.pImg figure figcaption{
+.more{
 	position: absolute;
-	left: 0.5em;
-	bottom: 0.5em;
+	top: 4em;
+	right: 2em;
 }
+.progress{
+	margin:8px 0 10px;
+}
+figure{
+	margin-bottom: 1em;
+}
+.weChat img{
+	display: block;
+}
+.tips{
+	position: absolute;
+	top: 1em;
+	left: 25%;
+}
+.weChat img,.weChat ul{
+	display: block;
+	width: 60%;
+	margin: 0 auto 1em;
+}
+#contactMe>div{
+	padding: 1em;
+}
+/*百度地图*/
+.iw_poi_title {
+	color:#CC5522;
+	font-size:14px;
+	font-weight:bold;
+	overflow:hidden;
+	padding-right:13px;
+	white-space:nowrap;
+}
+.iw_poi_content {
+	font:12px arial,sans-serif;
+	overflow:visible;
+	padding-top:4px;
+	white-space:-moz-pre-wrap;
+	word-wrap:break-word;
+}
+label{
+	min-width: 5em;
+}
+	
