@@ -97,6 +97,12 @@ table{
 figure{
 	margin-bottom: 1em;
 }
+figure:hover{
+	background: rgba(0,0,0,0.2);
+}
+#contactMe>div{
+	padding: 1em;
+}
 .weChat img{
 	display: block;
 }
@@ -110,8 +116,8 @@ figure{
 	width: 60%;
 	margin: 0 auto 1em;
 }
-#contactMe>div{
-	padding: 1em;
+.weChat li a{
+	color: white;
 }
 /*百度地图*/
 .iw_poi_title {
